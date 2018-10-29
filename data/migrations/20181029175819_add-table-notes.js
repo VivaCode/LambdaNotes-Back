@@ -1,17 +1,16 @@
-
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable('notes', notes => {
+  return knex.schema.createTable('notes', function(notes) {
       notes.increments();
       notes
       .string('title', 128)
       .notNullable()
       .unique();
       notes
-      .string('text body')
+      .string('textbody')
       .notNullable();
   });
 };
-
+  
 exports.down = function(knex, Promise) {
   return knex.schema.dropTableIfExists('notes');
 };
