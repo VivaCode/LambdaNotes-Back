@@ -1,19 +1,17 @@
 const express = require('express');
 const cors = require('cors');
-const knex = require('knex');
 const server = express();
-
-const knexConfig = require('./knexfile');
-const db = knex(knexConfig.development);
 
 server.use(express.json());
 server.use(cors());
+const routes = require('./data/config/routes');
 
 // sanity check
 server.get('/', (req, res) => {
   res.send('Its Alive!');
 });
 
+server.use('/api/notes', routes);
 
 const port =  8000;
 server.listen(port, () => {
