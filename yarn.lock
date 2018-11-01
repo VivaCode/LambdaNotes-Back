@@ -1643,6 +1643,11 @@ negotiator@0.6.1:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
   integrity sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
 
+node-bin-setup@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
+  integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
+
 node-pre-gyp@^0.10.0, node-pre-gyp@^0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.10.3.tgz#3070040716afdc778747b61b6887bf78880b80fc"
@@ -1658,6 +1663,13 @@ node-pre-gyp@^0.10.0, node-pre-gyp@^0.10.3:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
+
+node@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-11.0.0.tgz#20aff1b49ec65717b1603d6d90bbb61e0cfd0b7e"
+  integrity sha512-dD98lA8LETGcjwDEQ3/g2VaB0YaWZmPoDrKZFt7NJU4t24bbqy/apZ+5MZ6dfyCoy3Lwx80k+0Fq9glj+LEzkw==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 nodemon@^1.18.5:
   version "1.18.5"
