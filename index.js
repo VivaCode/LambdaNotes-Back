@@ -16,6 +16,6 @@ server.get('/', (req, res) => {
 server.use('/api/notes', routes);
 
 const port = process.env.PORT || 8000;
-server.listen(port, () => {
-  console.log(`\n=== Server listening on port ${port}\n`);
-});
+const instance = server.listen(port, () =>
+	console.log(`\n=== Server running on port: ${instance.address().port} ===\n`)
+);
