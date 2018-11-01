@@ -6,8 +6,7 @@
   "author": "Emily McClanahan <emily.f.mcclanahan@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "start": "nodemon"
   },
   "dependencies": {
     "cors": "^2.8.4",
