@@ -12,7 +12,7 @@ server.get('/', (req, res) => {
   res.send('Its Alive!');
 });
 
-server.use('/notes', routes);
+server.use('/api/notes', routes);
 
 const port = process.env.PORT || 8000;
 const instance = server.listen(port, () =>
